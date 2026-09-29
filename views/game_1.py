@@ -48,6 +48,6 @@ if st.button("Reset Game", key="reset_ttt"):
     st.rerun()
     
 if st.button("← Back to Lobby"):
-    st.switch_page("homepage.py")
+    st.switch_page("views/homepage.py")
 
 
