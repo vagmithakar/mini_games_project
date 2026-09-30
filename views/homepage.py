@@ -48,9 +48,8 @@ with tab3:
     st.header("Preferences")
     # Configurations go here
 
-    st.toggle("Sound") = True
     ##backround music playing continuously, only turning off when user does so.
-    if st.toggle("Sound"):
+    if st.toggle("Sound", value=True):
         lofi_url = "https://soundhelix.com" 
         st.audio(lofi_url, "the_mountain-lofi-beats-567433.mp3", format="audio/mp3", loop=True, autoplay=True)
     else:
