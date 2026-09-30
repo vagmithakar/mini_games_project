@@ -1,7 +1,15 @@
 import streamlit as st
-
+    
 st.title("❌ Tic-Tac-Toe ⭕")
 
+if st.toggle("Music 🎵 ", value=True):
+    lofi_path = r"C:\vagmi\Learn-Gen-AI\Test-jupyter\alex-morgan-lofi-beat-homework-focus-concentration-587404.mp3" 
+    st.audio(lofi_path, format="audio/mp3", loop=True, autoplay=True)
+else:
+    st.write("🔇 Music muted.")
+    
+## Main Code:
+print("\n\n")
 # Initialize game state
 if "board" not in st.session_state:
     st.session_state.board = [""] * 9

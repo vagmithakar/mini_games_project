@@ -3,6 +3,14 @@ import random
 
 st.title("🪨 Rock, Paper, Scissors ✂️")
 
+if st.toggle("Music 🎵 ", value=True):
+    lofi_path = r"C:\vagmi\Learn-Gen-AI\Test-jupyter\zephiramusic-lofi-beats-580208.mp3" 
+    st.audio(lofi_path, format="audio/mp3", loop=True, autoplay=True)
+else:
+    st.write("🔇 Music muted.")
+    
+## Main Code:
+print("\n\n")
 # Initialize scores
 if "scores" not in st.session_state:
     st.session_state.scores = {"Player": 0, "Computer": 0}
