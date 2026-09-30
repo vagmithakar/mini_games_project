@@ -47,7 +47,13 @@ with tab2:
 with tab3:
     st.header("Preferences")
     # Configurations go here
-    st.toggle("Sound")
+
+    ##backround music playing continuously, only turning off when user does so.
+    if st.toggle("Sound"):
+        st.audio("the_mountain-lofi-beats-567433.mp3", format="audio/mp3", loop=True, autoplay=True)
+    else:
+        st.write("🔇 Music muted.")
+    
     st.toggle("Vibrations")
 
 
