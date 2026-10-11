@@ -4,7 +4,7 @@ import random
 st.title("🪨 Rock, Paper, Scissors ✂️")
 
 if st.toggle("Music 🎵 ", value=True):
-    lofi_path = r"C:\vagmi\Learn-Gen-AI\Test-jupyter\Mini_games_project\zephiramusic-lofi-beats-580208.mp3" 
+    lofi_path = "zephiramusic-lofi-beats-580208.mp3" 
     st.audio(lofi_path, format="audio/mp3", loop=True, autoplay=True)
 else:
     st.write("🔇 Music muted.")
