@@ -2,6 +2,19 @@ import streamlit as st
 import random 
 
 st.set_page_config(layout = "wide")
+
+st.html(
+    """
+    <style>
+    /* Target only the buttons inside our custom game-board container */
+    div.game-board div[data-testid="stButton"] button {
+        height: 150px !important;    /* Adjust this value to change vertical length */
+        font-size: 2.5rem !important; /* Makes the emojis/icons bigger */
+    }
+    </style>
+    """
+)
+
 st.title("🧩 Memory Match")
 if st.toggle("Music 🎵 ", value=True):
     lofi_path = "sub_clair-lofi-586095.mp3"
