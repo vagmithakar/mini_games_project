@@ -50,7 +50,7 @@ with tab3:
 
     ##backround music playing continuously, only turning off when user does so.
     if st.toggle("Sound", value=True):
-        lofi_path = r"C:\vagmi\Learn-Gen-AI\Test-jupyter\the_mountain-lofi-beats-567433.mp3" 
+        lofi_path = r"C:\vagmi\Learn-Gen-AI\Test-jupyter\Mini_games_project\the_mountain-lofi-beats-567433.mp3" 
         st.audio(lofi_path, format="audio/mp3", loop=True, autoplay=True)
     else:
         st.write("🔇 Music muted.")
