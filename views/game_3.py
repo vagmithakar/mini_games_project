@@ -1,8 +1,8 @@
 import streamlit as st
 import random 
 
+st.set_page_config(layout = "wide")
 st.title("🧩 Memory Match")
-
 if st.toggle("Music 🎵 ", value=True):
     lofi_path = "sub_clair-lofi-586095.mp3"
     st.audio(lofi_path, format="audio/mp3", loop=True, autoplay=True)
